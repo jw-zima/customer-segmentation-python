@@ -13,7 +13,7 @@ Aim of this project is to determine clusters of similar customers based on their
 
 Dataset comes from the **kaggle** platform.
 
-#### Notes
+## Notes
 
 In order to preview reports in the *reports* folder use *GitHub & BitBucket HTML Preview*, i.e., just prepend this fragment to the URL of any HTML file: **[https://htmlpreview.github.io/?](https://htmlpreview.github.io/?)** e.g.:
 * https://htmlpreview.github.io/?https://github.com/jw-zima/customer-segmentation/blob/main/reports/Report%20pandas-profiler%20-%20raw%20data.html (EDA of raw dataset)
@@ -59,6 +59,11 @@ It does not contain a e2e pipeline that allow to load any data and perform clust
     │                         generated with `pip freeze > requirements.txt`
     │
     ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
+    ├── src                <- Source code for use in this project.
+    │   ├── data           <- Scripts to load or generate data
+    │   ├── features       <- Scripts to turn raw data into features for modeling
+    │   ├── models         <- Scripts to train models and then use trained models to make predictions
+    │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
     ├── .gitignore         <- List of files not sent to the repo
     └── env.yml            <- File to create environment with list of all necessary packages
 
