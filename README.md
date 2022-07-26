@@ -1,13 +1,40 @@
-customer-segmentation
-==============================
 
-A short description of the project.
+# customer-segmentation
 
-Project Organization
-------------
+## General info
+
+#### Problem Statement
+
+**Customer Personality Analysis** is an analysis of a company’s ideal customers. It helps a business to better understand its customers and makes it easier for them to modify products according to the specific needs, behaviors and concerns of different types of customers.
+
+Customer personality analysis helps a business to modify its product based on its target customers from different types of **customer segments**.
+
+Aim of this project is to determine clusters of similar customers based on their purchase behavior.
+
+Dataset comes from the **kaggle** platform.
+
+#### Notes
+
+In order to preview reports in the *reports* folder use *GitHub & BitBucket HTML Preview*, i.e., just prepend this fragment to the URL of any HTML file: **[https://htmlpreview.github.io/?](https://htmlpreview.github.io/?)** e.g.:
+* https://htmlpreview.github.io/?https://github.com/jw-zima/customer-segmentation/blob/main/reports/Report%20pandas-profiler%20-%20raw%20data.html (EDA of raw dataset)
+* https://htmlpreview.github.io/?https://github.com/jw-zima/customer-segmentation/blob/main/reports/Report%20pandas-profiler%20-%20extended%20data.html (EDA of extended nd cleaned dataset)
+
+## Technologies
+
+<p align="left">
+    <a alt="Jupyter Notebook">
+        <img src="https://img.shields.io/badge/%20-Jupyter%20Notebook%20-blue" /></a>
+</p>
+
+## Usage
+
+This project contains explanatory analysis along with clustering and profiling exercise performed in the [ipython notebook](https://github.com/jw-zima/customer-segmentation/blob/main/notebooks/clustering.ipynb) </br>
+It does not contain a e2e pipeline that allow to load any data and perform clustering.
+
+## Project Organization
+
 
     ├── LICENSE
-    ├── Makefile           <- Makefile with commands like `make data` or `make train`
     ├── README.md          <- The top-level README for developers using this project.
     ├── data
     │   ├── external       <- Data from third party sources.
@@ -32,25 +59,13 @@ Project Organization
     │                         generated with `pip freeze > requirements.txt`
     │
     ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
-    ├── src                <- Source code for use in this project.
-    │   ├── __init__.py    <- Makes src a Python module
-    │   │
-    │   ├── data           <- Scripts to download or generate data
-    │   │   └── make_dataset.py
-    │   │
-    │   ├── features       <- Scripts to turn raw data into features for modeling
-    │   │   └── build_features.py
-    │   │
-    │   ├── models         <- Scripts to train models and then use trained models to make
-    │   │   │                 predictions
-    │   │   ├── predict_model.py
-    │   │   └── train_model.py
-    │   │
-    │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
-    │       └── visualize.py
-    │
-    └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
+    ├── .gitignore         <- List of files not sent to the repo
+    └── env.yml            <- File to create environment with list of all necessary packages
 
+
+## References
+
+Dataset from kaggle - [Customer Personality Analysis](https://www.kaggle.com/datasets/imakash3011/customer-personality-analysis)
 
 --------
 
