@@ -1,0 +1,19 @@
+
+[flake8]
+
+# Provide a comma-separated list of glob patterns to exclude from checks.
+exclude =
+    .git,
+    __pycache__,
+    .pytest_cache,
+    .mypy_cache
+
+# Provide a comma-separate list of glob patterns to include for checks.
+filename =
+    *.py
+
+# Specify a list of codes to ignore.
+ignore =
+    F405,
+    F403,
+    W503
