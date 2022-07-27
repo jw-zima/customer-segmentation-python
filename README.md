@@ -1,5 +1,11 @@
 
 # customer-segmentation
+<p align="left">
+    <a alt="EDA">
+        <img src="https://img.shields.io/badge/%20-EDA%20-steelblue" /></a>
+    <a alt="Clustering">
+        <img src="https://img.shields.io/badge/%20-Clustering%20-steelblue" /></a>
+</p>
 
 ## General info
 
