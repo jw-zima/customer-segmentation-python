@@ -2,9 +2,9 @@
 # customer-segmentation
 <p align="left">
     <a alt="EDA">
-        <img src="https://img.shields.io/badge/%20-EDA%20-steelblue" /></a>
+        <img src="https://img.shields.io/badge/%20-EDA%20-orange" /></a>
     <a alt="Clustering">
-        <img src="https://img.shields.io/badge/%20-Clustering%20-steelblue" /></a>
+        <img src="https://img.shields.io/badge/%20-Clustering%20-orange" /></a>
 </p>
 
 ## General info
@@ -30,6 +30,18 @@ In order to preview reports in the *reports* folder use *GitHub & BitBucket HTML
 <p align="left">
     <a alt="Jupyter Notebook">
         <img src="https://img.shields.io/badge/%20-Jupyter%20Notebook%20-blue" /></a>
+    <a alt="python">
+        <img src="https://img.shields.io/badge/%20-python%20-blue" /></a>
+</p>
+
+Additionally pre-commit add-ins were used:
+<p align="left">
+    <a alt="flake8">
+        <img src="https://img.shields.io/badge/%20-flake8%20-steelblue" /></a>
+    <a alt="isort">
+        <img src="https://img.shields.io/badge/%20-isort%20-steelblue" /></a>
+    <a alt="interrogate">
+        <img src="https://img.shields.io/badge/%20-interrogate%20-steelblue" /></a>
 </p>
 
 ## Usage

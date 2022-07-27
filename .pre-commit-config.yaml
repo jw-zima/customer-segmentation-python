@@ -2,7 +2,11 @@ repos:
 -   repo: https://gitlab.com/pycqa/flake8
     rev: 3.8.4
     hooks:
-    - id: flake8
+    -   id: flake8
+        args: [
+          '--ignore=F405,F403,W503'
+        ]
+        additional_dependencies: [flake8-nb]
 
 -   repo: https://github.com/timothycrosley/isort
     rev: 5.7.0
@@ -13,4 +17,5 @@ repos:
     rev: 1.4.0
     hooks:
       - id: interrogate
-        args: [-v, -i, -I, --fail-under=80, src]
+        exclude: ^(docs/conf.py|setup.py|__init__.py)
+        args: [-vv, -i, -I, --fail-under=99, src]
