@@ -46,7 +46,7 @@ Additionally pre-commit add-ins were used:
 
 ## Usage
 
-This project contains explanatory analysis along with clustering and profiling exercise performed in the [ipython notebook](https://github.com/jw-zima/customer-segmentation/blob/main/notebooks/clustering.ipynb) </br>
+This project contains explanatory analysis along with clustering and profiling exercise performed in the [ipython notebooks](https://github.com/jw-zima/customer-segmentation/tree/main/notebooks) </br>
 It does not contain a e2e pipeline that allow to load any data and perform clustering.
 
 ## Project Organization
