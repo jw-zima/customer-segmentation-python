@@ -52,38 +52,31 @@ It does not contain a e2e pipeline that allow to load any data and perform clust
 ## Project Organization
 
 
-    ├── LICENSE
-    ├── README.md          <- The top-level README for developers using this project.
+    ├── README.md               <- The top-level README for developers using this project.
+    │
     ├── data
-    │   ├── external       <- Data from third party sources.
-    │   ├── interim        <- Intermediate data that has been transformed.
-    │   ├── processed      <- The final, canonical data sets for modeling.
-    │   └── raw            <- The original, immutable data dump.
+    │   ├── external            <- Data from third party sources.
+    │   ├── interim             <- Intermediate data that has been transformed.
+    │   ├── processed           <- The final, canonical data sets for modeling.
+    │   └── raw                 <- The original, immutable data dump.
     │
-    ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
-    │
-    ├── models             <- Trained and serialized models, model predictions, or model summaries
-    │
-    ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
+    ├── notebooks               <- Jupyter notebooks. Naming convention is a number (for ordering),
     │                         the creator's initials, and a short `-` delimited description, e.g.
     │                         `1.0-jqp-initial-data-exploration`.
     │
-    ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
+    ├── reports                 <- Generated analysis as HTML, PDF, LaTeX, etc.
+    │   └── figures             <- Generated graphics and figures to be used in reporting
     │
-    ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-    │   └── figures        <- Generated graphics and figures to be used in reporting
+    ├── src                     <- Source code for use in this project.
+    │   ├── data                <- Scripts to load or generate data
+    │   ├── features            <- Scripts to turn raw data into features for modeling
+    │   ├── models              <- Scripts to train models and then use trained models to make predictions
+    │   └── visualization       <- Scripts to create exploratory and results oriented visualizations
     │
-    ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-    │                         generated with `pip freeze > requirements.txt`
-    │
-    ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
-    ├── src                <- Source code for use in this project.
-    │   ├── data           <- Scripts to load or generate data
-    │   ├── features       <- Scripts to turn raw data into features for modeling
-    │   ├── models         <- Scripts to train models and then use trained models to make predictions
-    │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
-    ├── .gitignore         <- List of files not sent to the repo
-    └── env.yml            <- File to create environment with list of all necessary packages
+    ├── .gitignore              <- List of files not sent to the repo
+    ├── .pre-commit-config.yaml <- Add-ins executed in pre-commit
+    ├── LICENSE                 <- License file
+    └── env.yml                 <- File to create environment with list of all necessary packages
 
 
 ## References
