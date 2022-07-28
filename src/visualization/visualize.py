@@ -109,7 +109,7 @@ def plot_scatter_by_cluster(df, num_var1, num_var2, cluster_var):
 
 
 def plot_share_of_binary_vars_per_clusters(df, var, cluster_var):
-    """Make a col plot colored by clusters using ggplot grammar of graphics
+    """Make a column plot colored by clusters using ggplot grammar of graphics
     to present share of given binery var in each cluster
 
     Args:
@@ -138,3 +138,35 @@ def plot_share_of_binary_vars_per_clusters(df, var, cluster_var):
          + theme(axis_text_x=element_text(rotation=90, hjust=1))
          + scale_fill_brewer(type="qual", palette="Dark2"))
     print(g)
+
+
+def plot_stacked_vars_per_clusters(df, vars_list, cluster_var):
+    """Make a stacked column plot colored by variable using ggplot grammar
+    of graphics split by clusters
+
+    Args:
+    df (data.frame): dataset
+    vars_list (list): list of names of numeric variables that should be stacked
+    cluster_var (string): name of variable with clustes
+
+    Yields:
+    plot: Stacked column plot with mean value of each numeric variable
+    from the list per cluster
+
+    Examples:
+    >>> plot_stacked_vars_per_clusters(dataset,
+    ["wines_share", "fruits_share", "meat_share", "fish_share", "sweets_share",
+    "gold_products_share"], "cluster_kmeans")
+    """
+    vars_list.append("cluster_kmeans")
+    df = df.loc[:, vars_list]
+    df = df.groupby("cluster_kmeans").agg(['mean'])
+    df = df.unstack().reset_index()
+    df.columns = ['variable', 'agg_function', 'cluster_kmeans', 'mean_value']
+    df = df.drop('agg_function', axis=1)
+
+    return print(ggplot(x, aes(fill="variable", y="mean_value",
+                               x="cluster_kmeans"))
+                 + geom_bar(position="fill", stat="identity")
+                 + theme_light()
+                 + scale_fill_brewer(type="qual", palette="Dark2"))
