@@ -165,8 +165,8 @@ def plot_stacked_vars_per_clusters(df, vars_list, cluster_var):
     df.columns = ['variable', 'agg_function', 'cluster_kmeans', 'mean_value']
     df = df.drop('agg_function', axis=1)
 
-    return print(ggplot(x, aes(fill="variable", y="mean_value",
-                               x="cluster_kmeans"))
+    return print(ggplot(df, aes(fill="variable", y="mean_value",
+                                x="cluster_kmeans"))
                  + geom_bar(position="fill", stat="identity")
                  + theme_light()
                  + scale_fill_brewer(type="qual", palette="Dark2"))
