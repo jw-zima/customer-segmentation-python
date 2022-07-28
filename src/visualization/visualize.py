@@ -102,7 +102,7 @@ def plot_scatter_by_cluster(df, num_var1, num_var2, cluster_var):
     """
     return print(ggplot(df)
                  + geom_point(aes(x=num_var1, y=num_var2,
-                                  color=cluster_var))
+                                  fill=cluster_var))
                  + ggtitle(num_var1 + " vs " + num_var2)
                  + theme_light()
                  + scale_fill_brewer(type="qual", palette="Dark2"))
