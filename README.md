@@ -17,7 +17,7 @@ Customer personality analysis helps a business to modify its product based on it
 
 Aim of this project is to determine clusters of similar customers based on their purchase behavior.
 
-Dataset comes from the **kaggle** platform.
+Dataset comes from the **kaggle** platform. 
 
 ## Notes
 
